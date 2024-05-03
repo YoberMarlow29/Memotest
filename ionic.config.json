@@ -1,0 +1,7 @@
+{
+  "name": "memoTest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
