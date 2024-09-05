@@ -1,0 +1,95 @@
+ion-content {
+  --background: rgb(255, 204, 204); /* Fondo rosa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px; /* Ajusta según el tamaño del cronómetro */
+  background-color: rgba(255, 182, 193, 0.8);
+  border-bottom: 1px solid #ccc;
+}
+
+.header ion-button {
+  margin: 0 10px; /* Espacio entre los botones */
+}
+
+.box {
+  border-radius: 10px;
+  border: 1px solid #444;
+  box-shadow: 2px 2px 8px #444;
+  padding: 20px;
+  background: rgba(255, 182, 193, 0.8); /* Fondo rosa translúcido */
+  width: 100%;
+  max-width: 400px; /* Ajusta el ancho máximo */
+  height: 90%; /* Ocupa el 90% de la altura del contenedor */
+  margin-top: 10px; /* Ajusta este valor para mover hacia abajo */
+  margin-left: 14px; /* Ajusta este valor para mover hacia la derecha */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.level-button {
+  color: white; /* Color del texto del botón */
+  padding: 70px; /* Espaciado interno del botón */
+  font-size: 40px; /* Tamaño del texto */
+  border: none; /* Sin bordes */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  cursor: pointer; /* Cursor de mano */
+  width: 100%;
+  text-align: center; /* Centrar texto */
+  transition: background-color 0.3s; /* Transición para el color de fondo */
+}
+
+.level-button:hover {
+  filter: brightness(0.9); /* Efecto de brillo al pasar el cursor */
+}
+
+.level-button.easy {
+  background-color: #4CAF50; /* Verde */
+}
+
+.level-button.medium {
+  background-color: #FFEB3B; /* Amarillo */
+  color: black; /* Texto negro para mejor contraste */
+}
+
+.level-button.hard {
+  background-color: #F44336; /* Rojo */
+}
+
+.custom-button {
+  --background: #FF69B4; /* Rosa fuerte */
+  color: black; /* Texto negro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px; /* Ancho fijo para los botones */
+  text-align: center; /* Centrar el contenido */
+}
+
+.custom-button ion-icon {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

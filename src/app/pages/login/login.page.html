@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Juego de memoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content scroll-y="false">
+  <hr>
+  <hr>
+  <div class="upper">
+    <img src="/assets/images/rompecabezas.png" class="logo" />
+  </div>
+  <hr>
+  <hr>
+  <div class="middle">
+    <div class="box">
+      <form>
+        <h1>INICIO DE SESIÓN</h1>
+        <!-- INPUT EMAIL -->
+        <ion-item>
+          <ion-label position="floating">Dirección de Correo</ion-label>
+          <ion-input type="email" name="email" [(ngModel)]="email" required></ion-input>
+        </ion-item>
+        <!-- INPUT CONTRASEÑA -->
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" name="password" [(ngModel)]="password" required></ion-input>
+        </ion-item>
+        <!-- BOTON INGRESAR -->
+        <div class="btn">
+          <ion-button expand="block" (click)="btnLogin()">INGRESAR</ion-button>
+        </div>
+        <hr />
+        <p>Usuarios acceso rápido:</p>
+        <div class="btn">
+          <ion-button expand="block" class="secondary-btn" (click)="btnUsuarioUno()">ADMINISTRADOR</ion-button>
+        </div>
+        <div class="btn">
+          <ion-button expand="block" class="secondary-btn" (click)="btnUsuarioDos()">INVITADO</ion-button>
+        </div>
+        <div class="btn">
+          <ion-button expand="block" class="secondary-btn" (click)="btnUsuarioTres()">USUARIO</ion-button>
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>

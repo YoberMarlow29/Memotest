@@ -1,0 +1,27 @@
+<ion-content scroll-y="false">
+  <div class="header">
+    <ion-label>{{ formatTime(millisecondsElapsed) }}</ion-label>
+    <ion-button routerLink="/home">Abandonar juego</ion-button>
+  </div>
+  <div [ngClass]="level">
+    <div class="box-{{level}}">
+      <div class="grid-{{level}}">
+        <div class="card-{{level}}"
+             *ngFor="let card of cards; let i = index"
+             (click)="selectCard(i)"
+             [ngClass]="{'flipped': card.isFlipped, 'matched': card.isMatched, 'matched-incorrect': card.isMatchedIncorrect}">
+          <div class="image-container-{{level}}">
+            <div class="card-content">
+              <img *ngIf="card.isFlipped || card.isMatched" [src]="card.image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spinner de carga -->
+  <div class="loading-spinner" *ngIf="isSaving">
+    <ion-spinner name="crescent"></ion-spinner>
+  </div>
+</ion-content>

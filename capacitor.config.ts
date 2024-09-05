@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'memoTest',
+  appId: 'io.megyob.starter',
+  appName: 'Juego de Memoria',
   webDir: 'www'
 };
 

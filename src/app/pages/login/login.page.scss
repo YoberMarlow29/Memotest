@@ -1,0 +1,88 @@
+ion-content {
+  --background: rgb(255, 204, 204); /* Fondo rosa */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem; /* Ajusta el espacio superior si es necesario */
+}
+
+.upper {
+  text-align: center;
+  margin-bottom: 1rem; /* Ajusta el espacio inferior si es necesario */
+}
+
+.logo {
+  width: 5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.box {
+  border-radius: 10px;
+  border: 1px solid #444;
+  box-shadow: 2px 2px 8px #444;
+  padding: 20px;
+  background: rgba(255, 182, 193, 0.8); /* Fondo rosa translúcido */
+  width: 90%;
+  max-width: 500px;
+
+  h1 {
+    font-family: monospace;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 1rem; /* Ajusta el espacio inferior si es necesario */
+  }
+
+  p {
+    font-family: monospace;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+    margin-top: 1rem;
+  }
+
+  ion-item {
+    --background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: #000;
+    font-family: monospace;
+  }
+
+  ion-button {
+    --background: #ff99cc; /* Color rosa */
+    width: 100%; /* Ajusta el ancho del botón */
+    font-weight: bold;
+    border-radius: 50px; /* Bordes redondeados para hacer un óvalo */
+    --box-shadow: 2px 2px 4px #000;
+    margin-top: 1rem; /* Ajusta el espacio superior si es necesario */
+  }
+
+  .secondary-btn {
+    --background: #ff66a3; /* Color rosa más oscuro */
+  }
+
+  hr {
+    border: 1px solid rgb(0, 0, 0);
+    height: 5px;
+    width: 50%;
+    background: rgb(66, 65, 65);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+  }
+}
